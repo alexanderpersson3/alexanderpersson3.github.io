@@ -1,0 +1,30 @@
+{
+  "employment": [
+    {
+      "heading": "2019- Present - Red Crayon",
+      "jobTitle": "Entreprenör",
+      "location": "Stockholm",
+      "text": "Arbetsuppgifter består,  förutom driften av själva företaget, i att arrangera event,  försäljning av skyltar och profililering, samt e-handel."
+    },
+    {
+      "heading": "2015-2019 - Elgiganten",
+      "jobTitle": "Säljare, Butikschef, B2B-ansvarig",
+      "location": "Stockholm",
+      "text": "Under fyra år arbetade jag på fyra olika Elgiganten-varuhus inom olika områden och tjänster. Till en början var mina uppgifter försäljning, för att jobba med drift och personalansvar. Jag har också arbetat med B2B-sidan, direkt mot kunder som IKEA och Bonnier"
+    },
+    {
+      "heading": "2012-2014 - Willys",
+      "jobTitle": "Lagerarbetare, kassaarbete",
+      "location": "Piteå",
+      "text": "Willys är en livsmedelsbutik där jag har jobbat under två somrar och helger. Min tjänst bestod av kassaarbete och lagerarbete."
+    }
+  ],
+  "education": [
+    "2022 - Pågående YH-utbildning Fullstack Javascript vid Chas Academy",
+    "2015 - Slutfört kurs i Digital Marknadsföring och Entreprenörskap vid La Trobe University, Melbourne, Australien",
+    "2014 - Slutfört gymnasieprogram Samhällsvetenskap vid Strömbacka gymnasium i Piteå"
+  ]
+}
+
+
+

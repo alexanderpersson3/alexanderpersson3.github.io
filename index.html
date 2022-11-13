@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --step: 7%;
+        --offset: 25%;
+        --max-offset: calc(100% - var(--offset));
+        --bg-step: calc(100% / 70);
+        --angle-1: 0;
+        --angle-2: 0;
+        --angle-3: 0;
+        --angle-4: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+      }
+
+      a.home {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        /* background-image: repeating-conic-gradient(
+            from var(--angle-1) at var(--offset) var(--offset),
+            white,
+            white var(--step),
+            transparent 0,
+            transparent calc(var(--step) * 2)
+          ),
+          repeating-conic-gradient(
+            from var(--angle-2) at var(--max-offset) var(--max-offset),
+            white,
+            white var(--step),
+            transparent 0,
+            transparent calc(var(--step) * 2)
+          ),
+          repeating-conic-gradient(
+            from var(--angle-3) at var(--max-offset) var(--offset),
+            white,
+            white var(--step),
+            transparent 0,
+            transparent calc(var(--step) * 2)
+          ),
+          repeating-conic-gradient(
+            from var(--angle-4) at var(--offset) var(--max-offset),
+            white,
+            white var(--step),
+            transparent 0,
+            transparent calc(var(--step) * 2)
+          ),
+          repeating-conic-gradient(
+            from var(--angle-1),
+            purple 0,
+            purple var(--bg-step),
+            crimson 0,
+            crimson calc(var(--bg-step) * 2),
+            tomato 0,
+            tomato calc(var(--bg-step) * 3),
+            gold 0,
+            gold calc(var(--bg-step) * 4),
+            yellowgreen 0,
+            yellowgreen calc(var(--bg-step) * 5),
+            mediumaquamarine 0,
+            mediumaquamarine calc(var(--bg-step) * 6),
+            teal 0,
+            teal calc(var(--bg-step) * 7)
+          );
+        background-blend-mode: difference, difference, difference, difference,
+          normal;
+        -webkit-animation: cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        animation: cubic-bezier(0.65, 0, 0.35, 1) infinite;
+        -webkit-animation-name: angle1, angle2, angle3, angle4;
+        animation-name: angle1, angle2, angle3, angle4;
+        -webkit-animation-duration: 17s, 23s, 19s, 27s;
+        animation-duration: 17s, 23s, 19s, 27s;
+        -webkit-animation-delay: -3s, -0.7s, -1.3s;
+        animation-delay: -3s, -0.7s, -1.3s;
+        animation-direction: normal, normal, reverse, reverse; */
+      }
+
+      @-webkit-keyframes angle1 {
+        to {
+          --angle-1: 360deg;
+        }
+      }
+
+      @keyframes angle1 {
+        to {
+          --angle-1: 360deg;
+        }
+      }
+      @-webkit-keyframes angle2 {
+        to {
+          --angle-2: 360deg;
+        }
+      }
+      @keyframes angle2 {
+        to {
+          --angle-2: 360deg;
+        }
+      }
+      @-webkit-keyframes angle3 {
+        to {
+          --angle-3: 360deg;
+        }
+      }
+      @keyframes angle3 {
+        to {
+          --angle-3: 360deg;
+        }
+      }
+      @-webkit-keyframes angle4 {
+        to {
+          --angle-4: 360deg;
+        }
+      }
+      @keyframes angle4 {
+        to {
+          --angle-4: 360deg;
+        }
+      }
+
+      .click-main {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        text-align: right;
+        text-decoration: none;
+        z-index: 1;
+      }
+
+      .click-main h1 {
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      .click-main p {
+        color: #fff;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="home" href="home.html"></a>
+    <a href="home.html" class="click-main">
+      <h1>Click anywhere to continue</h1>
+      <!-- <p></p> -->
+    </a>
+    <script src="js/script.js"></script>
+
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <script src="js/canvas.js"></script>
+  </body>
+</html>
